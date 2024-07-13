@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paying Tours Expenses</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Paying Tours Expenses</h1>
+        <form id="paymentForm">
+            <label for="name"> Full Name:</label>
+            <input type="text" id="name" name="name" required autofocus>
+
+            <label for="email"> Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="paymentMethod">payment Method:</label>
+            <select id="paymentMethod" name="paymentMethod" required>
+                <option value="fawry">fawry</option>
+                <option value="creditCard">Credit Card</option>
+            </select>
+
+            <div id="creditCardInfo" style="display: none;">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" required>
+
+                <label for="expiryDate">Expiration Data:</label>
+                <input type="text" id="expiryDate" name="expiryDate" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </div>
+
+            <button type="submit">Pay</button>
+        </form>
+    </div>
+    <script src="script4.js"></script>
+</body>
+</html>
